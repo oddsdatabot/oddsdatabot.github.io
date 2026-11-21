@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OddsDataBot contact</title>
+  <style>
+    body {
+      max-width: 42rem;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    code {
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>OddsDataBot contact</h1>
+    <p>We are odds-data, a small odds research project.</p>
+    <p>User-Agent <code id="user-agent">OddsDataBot/1.0 (+https://oddsdatabot.github.io/bot)</code></p>
+
+    <h2>What we collect</h2>
+    <p>We collect only public pre-match odds available while logged out: event, market,
+      outcome, line, price and time. We use no sportsbook accounts and collect no
+      personal data, page text or images.</p>
+    <p>The current UK pilot is for research only. We publish none of its data.</p>
+    <p>We make a few requests per book every several minutes and obey each site's
+      <code>robots.txt</code>.</p>
+
+    <h2>How to ask us to stop</h2>
+    <p><a id="stop-contact" href="https://github.com/oddsdatabot/oddsdatabot.github.io/issues/new">To ask us to stop, open an issue</a>
+      naming your site. We stop all collection from your site as soon as we see the
+      issue, and we confirm the stop in that issue.</p>
+    <p>You do not need an account to stop us. Any of these stops all collection from your
+      site straight away, with no retries:</p>
+    <ul>
+      <li>an HTTP 403 or 429 response to <code>OddsDataBot</code>;</li>
+      <li>a <code>robots.txt</code> rule for <code>User-agent: OddsDataBot</code> (or <code>*</code>)
+        that disallows the pages we read. We re-read <code>robots.txt</code> at least once a day.</li>
+    </ul>
+  </main>
+</body>
+</html>
